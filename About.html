@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abin Chitrakar</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #0F172A;
+            color: #E2E8F0;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #0F172A;
+            padding: 15px 40px;
+        }
+
+        .nav-left a {
+            position: relative;
+            color: #E2E8F0;
+            text-decoration: none;
+            margin-right: 20px;
+            font-size: 16px;
+        }
+
+        .nav-left a::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -3px;
+            width: 0;
+            height: 2px;
+            background-color: #ebc700;
+            transition: 0.3s;
+        }
+
+        .nav-left a:hover::after {
+            width: 100%;
+        }
+
+        .nav-right h2 {
+            color: #E2E8F0;
+            margin: 0;
+            font-size: 20px;
+        }
+
+        .circle {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 370px;
+            height: 370px;
+            z-index: 999;
+        }
+
+        .circle::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 500px;
+            height: 500px;
+            background-color: #ebc700;
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        .photo {
+            position: fixed;
+            bottom: 0;
+            right: 20px;
+            width: 400px;
+            height: auto;
+            border-radius: 10px;
+            z-index: 1000;
+        }
+
+        .photo img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .name {
+            position: fixed;
+            top: 25%;
+            left: 20px;          
+            transform: translateY(-50%);
+            color: #ebc700;
+            font-size: 36px;
+            font-weight: bold;
+            z-index: 1000;
+        }
+
+        .text{
+            position: fixed;
+            top: 30%;
+            left: 20px;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-left">
+            <a href="About.html">About</a>
+            <a href="skills.html">Skills</a>
+            <a href="interest.html">Interest</a>
+            <a href="Contact.html">Contact</a>
+        </div>
+        <div class="nav-right">
+            <h2>Abin</h2>
+        </div>
+    </nav>
+
+    <div class="circle"></div>
+    <div class="photo">
+        <img src="pht.png" alt="Abin" />
+    </div>
+    <div class="name">
+        <h1>Abin Chitrakar</h1>
+    </div>
+    <p class="text">I am a Grade 11 student at Kavya, passionate about coding, web design, and digital arts. <br>I also work as a professional Graphic Designer and VFX Artist, creating visually engaging <br> projects and bringing creative ideas to life.</p>
+</body>
+</html>

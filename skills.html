@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abin Chitrakar</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #0F172A;
+            color: #E2E8F0;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #0F172A;
+            padding: 15px 40px;
+        }
+
+        .nav-left a {
+            position: relative;
+            color: #E2E8F0;
+            text-decoration: none;
+            margin-right: 20px;
+            font-size: 16px;
+        }
+
+        .nav-left a::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -3px;
+            width: 0;
+            height: 2px;
+            background-color: #ebc700;
+            transition: 0.3s;
+        }
+
+        .nav-left a:hover::after {
+            width: 100%;
+        }
+
+        .nav-right h2 {
+            color: #E2E8F0;
+            margin: 0;
+            font-size: 20px;
+        }
+
+        .container {
+            padding: 60px 40px;
+        }
+
+        h1 {
+            margin-bottom: 30px;
+        }
+
+        .category {
+            margin-bottom: 30px;
+        }
+
+        .category h2 {
+            color: #ebc700;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+            font-size: 18px;
+            padding: 8px 12px;
+            background-color: #1E293B;
+            border-radius: 6px;
+        }
+
+        .level {
+            float: right;
+            color: #ebc700;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-left">
+            <a href="About.html">About</a>
+            <a href="skills.html">Skills</a>
+            <a href="interest.html">Interest</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="nav-right">
+            <h2>Abin</h2>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>My Skills</h1>
+
+        <div class="category">
+            <h2>Programming</h2>
+            <ul>
+                <li>HTML <span class="level">Intermediate</span></li>
+                <li>CSS <span class="level">Intermediate</span></li>
+                <li>Python <span class="level">Beginner</span></li>
+            </ul>
+        </div>
+
+        <div class="category">
+            <h2>Design</h2>
+            <ol>
+                <li>Photoshop <span class="level">Advanced</span></li>
+                <li>Graphic Design <span class="level">Advanced</span></li>
+                <li>VFX Editing <span class="level">Intermediate</span></li>
+            </ol>
+        </div>
+
+        <div class="category">
+            <h2>Other Skills</h2>
+            <ul>
+                <li>Communication <span class="level">Good</span></li>
+                <li>Creativity <span class="level">Strong</span></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

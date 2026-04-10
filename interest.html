@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abin Chitrakar</title>
+    <style>
+                body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #0F172A;
+            color: #E2E8F0;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #0F172A;
+            padding: 15px 40px;
+        }
+
+        .nav-left a {
+            position: relative;
+            color: #E2E8F0;
+            text-decoration: none;
+            margin-right: 20px;
+            font-size: 16px;
+        }
+
+        .nav-left a::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -3px;
+            width: 0;
+            height: 2px;
+            background-color: #ebc700;
+            transition: 0.3s;
+        }
+
+        .nav-left a:hover::after {
+            width: 100%;
+        }
+
+        .nav-right h2 {
+            color: #E2E8F0;
+            margin: 0;
+            font-size: 20px;
+        }
+
+        .container {
+            padding: 60px 40px;
+        }
+
+        h1 {
+            margin-bottom: 30px;
+        }
+
+        .hobby {
+            background-color: #1E293B;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+
+        .hobby h2 {
+            margin: 0 0 10px 0;
+            color: #ebc700;
+        }
+
+        .hobby p {
+            margin: 0;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+        <nav class="navbar">
+        <div class="nav-left">
+            <a href="about.html">About</a>
+            <a href="skills.html">Skills</a>
+            <a href="interests.html">Interest</a>
+            <a href="Contact.html">Contact</a>
+        </div>
+        <div class="nav-right">
+            <h2>Abin</h2>
+        </div>
+    </nav>
+    <div class="container">
+        <h1>My Interests</h1>
+
+        <div class="hobby">
+            <h2>Graphic Design</h2>
+            <p>I enjoy creating digital designs and working on creative visual projects that allow me to express ideas visually.</p>
+        </div>
+
+        <div class="hobby">
+            <h2>VFX Editing</h2>
+            <p>I like editing videos and adding visual effects to enhance storytelling and make content more engaging.</p>
+        </div>
+
+        <div class="hobby">
+            <h2>Coding</h2>
+            <p>I am passionate about building websites and continuously learning new programming skills.</p>
+        </div>
+
+        <div class="hobby">
+            <h2>Reading about Politics</h2>
+            <p>I enjoy learning about society, politics, and current events to better understand the world around me.</p>
+        </div>
+
+    </div>
+</body>
+</html>
